@@ -2,3 +2,63 @@ machine learning provides stats tools to analyze , visualise , forecasting the d
 deep learning is a subset of machine learning.(mimics the human brain.)
 deep learning use multi layer neural network.
 
+types of ml 
+1) supervised ml technique-dependent or op feature,continuous(regression),categorial(classification)
+classification
+2)unsupervised ml- we do not know output feature, we need to find similiar cluster grop
+salary   spending score[1-10]
+20000     9
+45000     2                     
+here we create cluster
+in form of graph
+
+Algorithm 
+supervised ml            unsupervised ml
+1)linear regression          1) K means
+2)ridge and lasso            2) Hierarichal mean
+3)elastic net                 3) db scan mean
+4)logistic regression
+5)decision tree
+6)random forest
+7)ada boost
+8) xg boost
+
+Reinforcement learning- application learn by itself  by getting amazing marks .ie 
+like a baby how he/she starts walking.
+equation of straight line y=mx+c
+
+wtx=0
+where coordinates of w(0,0) passes through a plane.
+
+distance of a point from a plane
+d=wts/|w|
+wts=wtscoso
+above the plane <90
+
+ml learns data through
+
+1) instance based
+dependent on data we will get specific o/p, see surrounding daa dependts upon where maximum data is passed of failed and given result based on maximum data
+
+no model to store
+
+no new prediction
+
+2)model based technique
+tries to understand pattern with data and creates generalization method to specify data
+
+
+store the data in file(serialized format)
+
+down the plane 90>
+
+predict the new data
+
+memorizing - instance based learning
+generalizing - model based learning
+
+
+
+
+
+
