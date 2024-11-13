@@ -1,0 +1,14 @@
+what is an staging area in etl ?
+staging area or loading phase is an intermediate phase before transformation occurs.It holds raw data from various data sources before any transformations.it performs checks on data and clean data.
+it is used to process large quantity of data and make ready data for transformation.
+
+How do you handle incremental data loading?
+
+data loading means loading only those records which are updated or a new record without loading all the record at a time.
+this changes optimises time and reduce resource usgae-
+there are two technique
+1)cdc- it uses database triggers, logs to identify the latest records
+2) timestamp
+
+
+
