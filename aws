@@ -85,9 +85,24 @@ Amazon Redshift automatically distributes the data and loads the query across va
 
 aws application services-
 1)sqs
-2)swf
-3)sns
-4)elatic transcoder
-5)gateway
-6)kinesis
-7) glue jobs
+-async message based communication
+send , store retreive multiple message
+2)swf(simple workflow servie)-corordinator between modules
+3)sns-
+mass mesagings and mobile communication service
+4)elatic transcoder- convert media files into different required formats
+5)gateway- multiple api calls, api caching
+6)kinesis-strealiming data , ie game
+7) glue jobs-
+
+crawler crwals through data and create catalog scehmas
+
+serverless, schema inteferance
+crawler discover table and extracts schemas
+
+autogen etl scripts
+
+s3->rds->catalog(extracts and store in table)->generates scripts perform etl->redshift 
+
+
+executes and load in dw becasue it is serverless
