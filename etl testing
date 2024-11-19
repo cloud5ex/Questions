@@ -1,0 +1,53 @@
+data skewness in etl process refers to even distribution of data across different
+nodes in a environment.
+this imbalance occurs when certain nodes gets un even distribution at certain point.
+
+steps involved in etl testing
+1) analyse business requirements- gather and analyse the business requiremnt for data migration
+,transformation rules
+
+2) data source indentification- all data source must be identified including database or externnal system and 
+develop a plan for data extraction.
+
+3)design test cases- createtest scenario for input , output and validating output.
+
+perform test execution-
+
+stage 1- here we verify that data is correctly extracted from source syste and ensure that the 
+number of records extracted matches the expected number.
+
+stage 2- we ensure the transformation applied is according to business rule.
+we check for duplicates, missing value, incorrect data formats.
+
+stage 3- we verify the data is loaded in the target , we ensure data integrity and consistency.
+
+step 5- document the results of each test case , any defects found and ensure their resolution
+
+bugs in etl -
+calculation errors-
+source bug-missing value, duplicate records
+version control bug-
+input /output
+ui bug
+load condition bug
+data profiling check structure and relational form of data loaded in table
+
+its involves columns to check data types,
+patterns
+uniqueness
+and detect duplicates , missing value and outliers.
+
+data cleansing-
+normalise data formats
+validation - verify data against predeined rukes
+deduplicatiom
+imputation
+
+data validation-
+row count validation- verify the number of rows processes matches the expectation
+checksum validation- calculate checksums or hashes to verify data integrity 
+statistical validation- compare aggregated results with expected value to detect discrepancies.
+
+error handling and logging-
+it monitors all error and exception by exccption handling
+
