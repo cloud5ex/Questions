@@ -10,5 +10,73 @@ there are two technique
 1)cdc- it uses database triggers, logs to identify the latest records
 2) timestamp
 
+metadata is information about data itself. it store the data in organized form 
+also it tells about data history , who is owing the data , what kind of data it is,
+who has permission to use the data and when it is created , what is the version for data.
+
+data cube is a collection of data which is stored inside warehousing.it contain large amount of
+data stored inside the warehouse. it can be multidimensional .data can be stored multidimensional
+as an form of array where it is easier to index and retreive also perform olap transactions.
+
+it is also relational based data stored in it where tables are stored in relation to each other.
+
+snowflake schema- fact table - > dimension table->sub dimensional table.
+star schema- fact table- dimension table
+
+some data warehouse solution are-
+snowflakes, hadoop, aws redshift
+
+data mining - where data is in collected form and used to find pattern in order to find
+analysis and see trends to use those data for future pupose. complex algorithm is used
+to see the pattern and use thhose data(extracting). ex- retail and supermarkets whats user is shopping.
+
+active data warehousing- collect data and do transaction and distribute in real time.
+ex trading.
+
+Types of data warehousing-
+1)enterprise data warehouse
+2) ods
+3) data mart- dependent , independednt . hybrid
+
+fact contain  numeric and textual format, dimension contain only textual info
+table grow vertically , table grow horizontaly
+first dimension is created then fact is create.
+
+types of scd
+type 1- replaces the old value
+type 2- creates new row for the value-
+type3 - create new column for the value
+(customer address , description )
+junk , conformed(exactly same dimension ie car color , style ), roleplay(same dimension key linked to dieffretn foreign key(time , order day, ship day)), degenrate (dimension in fact table ie ticket number , transaction number)
+
+dimension table . It includes a column that serves as a primary key, allowing each dimension row or record to be uniquely identified. Through this key, it is linked to the fact tables. When it's constructed, a system-generated key called the surrogate key is used to uniquely identify the rows in the dimension.
+
+
+types of fact table-
+transactional- one transactional per row
+snapshot - add new row at a end of each day, week , month or specified interval
+accumulating- well defined beginning and end. data stamps over course of lifespam.
+
+agglomerative - unstructured clustering , combining all cluster into one.
+
+divisive- define number of clusters 
+
+
+how you will create fact and dimension table-
+
+business requirement
+identify grain
+identify dimenion
+identify fact
+identify schema
+
+levels of data warehousing-
+source->staging area->warehouse->data marts->mining
+
+
+
+
+
+
 
 
