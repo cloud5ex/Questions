@@ -1,0 +1,32 @@
+azure is completely based on concept of virtualization.
+
+webapi->orchestrator(authenticate)->fabric controller(monitor and repairs the services)->racks
+
+public cloud - when we buy azure services it is used by third party ex storage , web services software
+private cloud - when we buy azure services it is used by company and the data is stored on company onsite datacentre
+
+hybrid - combination of public and private cloud
+
+types of cloud services-
+
+iaas(infrastructure as service)- managing serviers , vm machine all we can use in one platform
+saas(software as service)- provide wev services like microsoft services to end users
+paas(platform as service)- provide developer a platform to develop, test and deliver , where they can deploy and run it.
+
+azure portal is a place where we can manage all azure application at one place.
+
+azure storage builing blocks-
+blob
+azure files
+archive
+azure queues
+azure table
+azure disk storage
+azure storsimple
+azure site recovery
+azure data box
+azure backup
+cdn
+
+
+
