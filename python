@@ -1,0 +1,48 @@
+learn the basics- type casting,exception,function , builtin function , list , tuples , sets , dictionaries
+
+type casting-
+3 types-
+  int(),float(),str()
+  x=int(3)
+y=float(3.4)
+z=str(56)
+
+exception-arithmetic error, assertion error, exception,indentation error, loookuperror
+memoryerror
+a=[1,2,4]
+try:
+  print()
+  except:
+  print()
+
+raise statement- allows the programmer to force a specific exception to occur.
+
+try:
+  raise Nameerror("hi there")
+except Nameerror:
+print("an exception")
+
+list is a collection which is ordered and changeable.Allows a duplicate member
+a=[1,5,6,7,"gbg","rgb]
+   tuple- is a collection which is ordered and unchangeable .allows duplicate members.
+
+   x={3,4,5,6}
+
+   set- is unordered and unchangebale and no duplicate memebers
+
+   myset={"apple","banaban","cherry"}
+
+   dictionaries- ordered and changeable and no duplicate memebers.
+   thisdict={
+   "brand":"ford"
+   "year":56
+   "name":"sarth"
+
+data structures and algorithgm
+1)arrays and linked list
+2)hash tables
+3)heaps, stacks and queues
+4)binary search tree
+5)recursion
+6)sorting algorithm
+   
