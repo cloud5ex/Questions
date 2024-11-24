@@ -16,11 +16,11 @@ paas(platform as service)- provide developer a platform to develop, test and del
 azure portal is a place where we can manage all azure application at one place.
 
 azure storage builing blocks-
-blob
-azure files
-archive
-azure queues
-azure table
+blob-it is used to stored unstructed data such as media , files and documents
+azure files-share files between two vm
+archive-unused files into archive
+azure queues-it is used to store messages(queues)
+azure table- no sql
 azure disk storage
 azure storsimple
 azure site recovery
@@ -28,5 +28,127 @@ azure data box
 azure backup
 cdn
 
+azure repository- a multiple branch will be created , each branch represents version of code and each developer has access to code
+pipeline-perform continuous ci and cd , build pipeline and perform release to the same pipeline.
+board- customisable boards and integrated reporting used to see the backlogs and in progresss boards.
+
+test plan - it provides test plan for which kind of test we are going to undergo.
+
+artifacts- it checks the dependency for the different environment.
+azure devops-
+boards for agile planning
+artifacts for version control
+cicd for continous deployment
+test integration for continous lifecycle process.
+
+azure repository is set of version control tools we use to manage our code.
+
+repository- location of our code
+branch-branch keeps history of commit and provides option of isolation commit for 
+bugs and fixes from main branch.
+branch policies- helps in from protecting main branches.
+pull command updates the changes in code .
+pust and commit-a commint is saving .
+fork-copy of the branch
+
+pipeline-means how to deploy test and run 
+stage- boundary in pipeline .each stage contains one or two jobs.
+job -set of steps.it runs on agents
+step- smallest builing block of pipeline. it can be either scipt or test. test is already script
+
+agents is running one job at a time and agent pool is where all agent is stored.
+
+artifacat - collection of files and pacages.
+
+trigger-schedule the pipeline when to run.After pushing code in pipeline we can scheduled when to run by help of trigger.
+
+checks- set of validation required before deployment.
+runs-it collects log
+
+azure function - we use azure function in order to write less code , manage less infrastructure and saves time.
+
+durable function - it is used to create stateful functions.we can create orchestrator function to mange flow of workflows , including storing and accessing different state across platform.
+
+function chaining
+fan-out/fan-in
+async http apis
 
 
+azure databse services for data migration
+azure data migration service
+azure data syn
+sql streth database
+data factory- it is used for etl transformation. extract etl from on premises and load into azure sql
+
+cosmos db- nosql databse ex iot and gaming
+azure sql support json, spatial and xml
+
+sql databse logical server- it acts as administrative point for multiole single or pooled database logins
+
+elastic pools- managing databse more than one.scaling and managing them into one.
+
+cosmos db-
+index searching and no schema
+
+in cosmos db we do logical partioning where we distrivute data data in container with one partioning key
+
+d\azure data factory-
+pipeline
+actvity
+datasets-use datastructures with data stores for i/o outputs
+triggers- to disable an activity in pipeline.
+
+scan/aggregation
+load
+create table as select(ctas)
+mssynctable
+
+api manaement portals
+product-each product contain many apis
+`
+scale in 
+scale out
+
+azure app service secuirty
+authentication(tokens), authorization
+
+arm
+
+cdn location (caching)
+
+assets contain digital files and metadata
+assestsfile-it contain metadata
+locators-it provides an entry point to acces the file contained in asset
+job-it us used to process one audio/video presentation
+channels-live streaming programs
+program-publishing and storing of segments
+streaming endpoint-it represents a streaming service that delivers content
+
+activr directory- it is used to who can access virtual machines
+key vault- it is used to store sensitive info in azure
+
+auto scaling- once the cpu utlization is highes than 80 percent then spin off a new instnace
+horizontally scaling0 increasing or decreasing vm
+vertical scaling- more powerful cpu in vm
+
+ddos protection- protect vm from ddos
+firewall
+traffic manager-controls user traffic for service endpoints
+load balancer- distribute the traffic evenly a pool of web servers
+
+peering is used to coonect two vnets in same region and same zones
+
+vpn gateway - And if the workloads in those virtual networks need to communicate with each other, they will communicate via this encrypted channel of communication between the VPN gateways of both virtual network
+
+sas 
+contianer is like folder where blobs are stored.
+in container we can personalized blob storage
+snapshot - read only version , for example if we are devloping youtube like function then we can retain older version too
+
+logging is ises to monitor an individual transactions
+
+apache spark is popular dramework for large data analysis for big data.
+
+databricks is a integration for apacke spark helps in data visualizing of big data.
+dbfs- acces data from blob storage.it is like a abstration layer.
+orchestrator includes web apis to do crud operation
