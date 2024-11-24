@@ -1,0 +1,80 @@
+cluster is collection of of virtual machines. in cluster there is driver node which 
+arrange the task for worker nodes
+cluster form a group of computer into single computer via driver 
+
+data bricks runs different work loads such as etl , ml
+
+types of cluster-
+
+1)all purpose cluster - 
+created manually via graphical user interface, cli or api, [ersistnt,suitable for interactive workloads , shared among users and expensive to run
+2)job cluster are created hwne a job starts to exceute, terminated at the end of job, suitable for automated workload, isolated and cheaper to run
+
+multinode has one driver node , when job is run then driver node gives tasks to eorker node
+and scales horizontally
+
+single node have one node driver node , when spark jobs is run they acts as both driver and worker loads.
+
+sql workforce faster.-vectorised query
+
+memory(ml ), compute(sql, data scrience), storage(hogh disk requirement) , general, gpu (deep learning)
+
+
+ pricing in volves following things-
+
+workload, photon , pricing plan etc
+
+dbu * price=dbu cost
+1 driver * price of vm = driver node cost
+no of workers * price vm= worker cost
+summation of 3 gives pricing for databricks cost
+
+cluster pool ready idle instances and max instance 2(vm)
+
+policy are set of rule and restrict access for user so that they cant able to change
+
+limit access.
+
+%md -document
+%sql-to write in sql
+
+%fs
+%sh
+ps
+
+dbutils.fs.ls('/)
+sas token is used to acces the storage account
+
+session scoped authentication
+cluster scoped authentication
+aad pass through authentication- looks for user role , otherwise not
+unity  calalog- addminister define access 
+
+asld(gen2)
+
+each storage acoount comes with 2keys
+gives full access to the storage account
+
+
+keys can be regenrated
+in order to transfer data to storgae to azure data lake gen 2 we need acces keys.
+we order to spark configuration fs.azzre,account.key.abfss://demo@formula1dl.dfs.core.windows.net/test/circuit.csv
+
+
+microsoft offers abfs or azure blob file system driver to acess sotred
+abfss://demo@formula1dl.dfs.core.windows.net/test/circuit.csv
+
+
+sas restrict access to speicific resiurce
+limit accces to specific ip address
+
+databricks is a cloud based process which is helped to process large amount of data
+
+azure is a service provider which provides services and manage .
+dbu is databricks framework which handle calculation pricing.
+
+advatanges of databricks -
+1)cluster can reduce the cost and increses 80 % .
+2)databricks can be used to made extensive data pipelines which increases procductivity.
+
+
