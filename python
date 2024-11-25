@@ -40,9 +40,80 @@ a=[1,5,6,7,"gbg","rgb]
 
 data structures and algorithgm
 1)arrays and linked list
+a=arr.array('d',[1,2,1,3])
+a.append(3.4),a.extend,pop,concadenate
+collection of ordered series element of same type.a list can store any value while 
+array store same value.
 2)hash tables
 3)heaps, stacks and queues
 4)binary search tree
 5)recursion
 6)sorting algorithm
+ am module is a file containing python definition and statment with .py
+
+lambda is a anonymous function 
+
+it can take any argument but only one expression
+x=lambda a:a+10
+print(x(5))
+x=lambda a,b: a+b
+print(x(5,6))
+
+decorators add fuctionality to a existing function
+
+def hello(func):
+def inner():
+print('hello')
+func()
+return inner
+def name():
+print("alice")
+obj=hello(name)
+obj()
+
+list compresion
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+new list=[x for x in fruits if a in x]
+print(new list)
+
+genrator return iterator it contains yeild statement return a generator object
+
+def squares(length):
+for n in range(lenght):
+tield n*2
+
+python supoorts imperative programming paradigm- it executes commands in a step by step manner
+
+functional programming paradigm
+computation based on lambda calculus , it approah is what to solve approah
+
+procedural programming paradigm- same as imperative programming
+
+he procedural programming paradigm facilitates the practice of good program design and allows modules to be reused in the form of code libraries.
+
+object oriented programming paradigm
+class stringops:
+def __init__(self,charaters):
+self.characters=characters
+def stringify(self):
+self.string=''.join(self.characters)
+
+write() can be used to write to a open stream
+context managaer define with statment and enter()exit() methods
+
+join(),aquire(),release()
+
+asynchrony- without blocking,using asyn and await , it is used for networking, file manipulation 
+
    
+
+gil is used to allow one thread to execute at an time.
+start()
+daemon- is a process that runs in background
+start()¶
+run()
+join(timeout=None)
+is_alive()
+daemon
+release()
