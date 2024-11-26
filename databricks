@@ -4,6 +4,13 @@ cluster form a group of computer into single computer via driver
 
 data bricks runs different work loads such as etl , ml
 
+in application driver node runs the application , the application is divided into job, stage and task.
+
+datafrmae is rows and column its is divided.spark provides datafrmae reader methods , then the dataframe data is to transform .
+
+read->dataframe->write
+
+the driver has slot that slots have task when any job is run
 types of cluster-
 
 1)all purpose cluster - 
@@ -73,8 +80,52 @@ databricks is a cloud based process which is helped to process large amount of d
 azure is a service provider which provides services and manage .
 dbu is databricks framework which handle calculation pricing.
 
+databricks file system is a distributed file system mounted on the databricks workspace
+
 advatanges of databricks -
 1)cluster can reduce the cost and increses 80 % .
 2)databricks can be used to made extensive data pipelines which increases procductivity.
 
+
+dbfs is a default storage
+
+dbutils.fs.ls('/')- to find the directory in dbfs
+
+databricks mounts - access data without requiring credentials.
+access files using file semantics rather than storage urls.
+stores file to onject storage
+
+databricks notebooks->dbfs->service principal-(create mount using credentials)>azure data lake gen 2
+databricks notebook->dbfs->azure data lake gen 2
+
+unity catalog is a databricks offered unified solution for data governance in data lakehouse.
+
+access control of data for users.
+
+unity catalog offers-
+1)data access control
+2)data audit logs
+3)data lineage(trace back of data , flow of data)
+4) right data discover 
+
+metastore-
+storage credential- credential object stored centrally in the metastore
+user on users behalf access cloud storage
+created using managed identity /service principal
+can be assigned access control policies
+access connector for databricks
+
+external location
+object stored centrally at the metastore
+combines the adls path with the storage credential
+subject to acces control policies
+storage credential +adls
+
+data factory ingest->transform->publish
+
+data factory is serverless
+
+components
+triggers(scheduled process ex every sunday)->pipeline->activity->linked service->storage
+tumbing window trigger (every 6 hours)
 
