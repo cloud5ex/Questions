@@ -117,3 +117,85 @@ join(timeout=None)
 is_alive()
 daemon
 release()
+
+pytest 
+def test_greater():
+   num = 100
+   assert num > 100
+
+def test_greater_equal():
+   num = 100
+   assert num >= 100
+
+def test_less():
+   num = 100
+   assert num < 200
+
+Pytest allows us to use markers on test functions.
+import pytest
+@pytest.mark.great
+def test_greater():
+   num = 100
+   assert num > 100
+
+@pytest.mark.great
+def test_greater_equal():
+   num = 100
+   assert num >= 100
+
+@pytest.mark.others
+def test_less():
+   num = 100
+   assert num < 200
+
+Parameterizing of a test is done to run the test against multiple sets of inputs. We can do this by using the following marker −
+import pytest
+
+@pytest.mark.parametrize("num, output",[(1,11),(2,22),(3,35),(4,44)])
+def test_multiplication_11(num, output):
+   assert 11*num == output
+
+This xml file is mainly useful in cases where we have a dashboard that projects the test results.
+pytest test_multiplication.py -v --junitxml="result.xml"
+
+Pytest can run multiple tests in parallel, which reduces the execution time of the test suite.
+
+Pytest has its own way to detect the test file and test functions automatically, if not mentioned explicitly.
+
+Pytest allows us to skip a subset of the tests during execution
+
+start()
+run()
+join()
+
+locking - acquire()-to lock the thread
+release()- changes the state to unlock
+A reentrant lock is a synchronization primitive that may be acquired multiple times by the same thread.
+, wait() re-acquires the lock and returns.
+The notify() method wakes up one of the threads waiting for the condition variable, if any are waiting.
+class - it a collection of object - it contain attributes of objects.
+object- it has behaviour and state
+
+class student:
+def __init__(self,name, class):
+self.name=name
+self.class=class
+def car(self):
+print(self.name,self.class)
+c1=student("sarth",4)
+c1.car()
+
+method define what object want to tell with help of method.
+
+single derived inheritance-
+
+class animal:
+def bark(self):
+print("dog")
+class human(animal):
+def cat(self):
+print("meow")
+c1=cat()
+c1.bark()
+c1.cat()
+
