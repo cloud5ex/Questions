@@ -129,3 +129,6 @@ components
 triggers(scheduled process ex every sunday)->pipeline->activity->linked service->storage
 tumbing window trigger (every 6 hours)
 
+tempview only available in spark session.
+global view available in all notebook
+
