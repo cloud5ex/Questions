@@ -1,0 +1,26 @@
+kernel - manages allocation of time and memory to programs.
+
+touch 
+ls
+rm
+mkdir
+ls -a
+rmdir
+head 
+tail
+cat 
+tac
+sudo
+su
+sudo usernod -aG sudo blogg
+sudo adduser jack
+
+cat /etc/passwd
+passwd
+sudo deluser jack
+display monthly calender
+display current time and date
+displaying text
+check disk usage
+
+dis
